@@ -34,7 +34,7 @@ linux
 
 #### 使用示例
 ```
-wget https://github.com/peachyy/jvmdump4k8s/releases/download/v1.11.1/jvmdump4k8s-linux.zip
+wget https://github.com/peachyy/jvmdump4k8s/releases/download/v1.11.2/jvmdump4k8s-linux.zip
 unzip jvmdump4k8s-linux.zip 
 chmod +x jvmdump4k8s
 
@@ -42,6 +42,8 @@ chmod +x jvmdump4k8s
 
 ```
 输入相关配置并保存
+storage.type 可选值 阿里云OSS=alioss 华为云OBS=huaweiobs
+
 ```
 storage.type=alioss
 
