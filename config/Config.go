@@ -11,7 +11,13 @@ type Config struct {
 	AccessSecret string `ini:"alioss.accessSecret"`
 	BucketName   string `ini:"alioss.bucketName"`
 	Folder       string `ini:"alioss.folder"`
-
+	//华为OBS
+	HwEndpoint   string `ini:"huaweiobs.endpoint"`
+	HwAk         string `ini:"huaweiobs.ak"`
+	HwSk         string `ini:"huaweiobs.sk"`
+	HwBucketName string `ini:"huaweiobs.bucketName"`
+	HwFolder     string `ini:"huaweiobs.folder"`
+	//通知相关
 	NotifyDingToken string `ini:"notify.dingtalkToken"`
 	NotifyWxToken   string `ini:"notify.wxKey"`
 	PodName         string `ini:"podName"`

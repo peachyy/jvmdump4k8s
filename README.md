@@ -44,6 +44,7 @@ chmod +x jvmdump4k8s
 输入相关配置并保存
 ```
 storage.type=alioss
+
 #阿里云OSS配置
 alioss.endpoint=请输入ossendpoint
 alioss.accessKey=请输入
@@ -51,6 +52,14 @@ alioss.accessSecret=请输入
 alioss.bucketName=请输入
 #oss目录
 alioss.folder=jvmdump
+
+#华为云OBS配置
+huaweiobs.endpoint=请输入obs  endpoint
+huaweiobs.ak=EOQALVN6RH4R0K7PRKYS
+huaweiobs.sk=4caa7n0QyLGzzbAyXcxwYQSP2XmDvX6HTYGOnP49
+huaweiobs.bucketName=changan-obs-app2
+huaweiobs.folder=jvmdump
+
 #通知消息是可选的 如果不设置就不推送消息
 #钉钉群机器人token
 notify.dingtalkToken=

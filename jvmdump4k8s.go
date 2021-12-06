@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"jvmdump4k8s/alioss"
 	"jvmdump4k8s/config"
+	"jvmdump4k8s/huaweiobs"
 	"jvmdump4k8s/notify"
 	"jvmdump4k8s/util"
 )
@@ -64,10 +65,14 @@ func parseCli() {
 //Storage
 func uploadStorage(file string) string {
 	type_ := config.GlobalConfig.Type
-	if type_ == "alioss" {
+	switch type_ {
+	case "alioss":
 		return alioss.Upload(file)
+	case "huaweiobs":
+		return huaweiobs.UploadToHwObs(file)
+	default:
+		panic(fmt.Sprintf("不支持文件存储类型%s", type_))
 	}
-	panic(fmt.Sprintf("不支持文件存储类型%s", type_))
 }
 
 //发送IM 工具
