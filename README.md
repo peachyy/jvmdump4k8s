@@ -42,7 +42,7 @@ chmod +x jvmdump4k8s
 
 ```
 输入相关配置并保存
-storage.type 可选值 阿里云OSS=alioss 华为云OBS=huaweiobs
+storage.type 可选值 阿里云OSS=alioss 华为云OBS=huaweiobs 七牛云=qiniu
 
 ```
 storage.type=alioss
