@@ -17,6 +17,14 @@ type Config struct {
 	HwSk         string `ini:"huaweiobs.sk"`
 	HwBucketName string `ini:"huaweiobs.bucketName"`
 	HwFolder     string `ini:"huaweiobs.folder"`
+	//七牛云
+	QiniuApiHost   string `ini:"qiniu.apiHost"`
+	QiniuAccessKey string `ini:"qiniu.accessKey"`
+	QiniuSecretKey string `ini:"qiniu.secretKey"`
+	QiniuBucket    string `ini:"qiniu.bucket"`
+	QiniuFolder    string `ini:"qiniu.folder"`
+	QiniuUseHTTPS  string `ini:"qiniu.usehttps"`
+
 	//通知相关
 	NotifyDingToken string `ini:"notify.dingtalkToken"`
 	NotifyWxToken   string `ini:"notify.wxKey"`

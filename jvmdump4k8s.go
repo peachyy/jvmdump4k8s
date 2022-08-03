@@ -7,6 +7,7 @@ import (
 	"jvmdump4k8s/config"
 	"jvmdump4k8s/huaweiobs"
 	"jvmdump4k8s/notify"
+	"jvmdump4k8s/qiniu"
 	"jvmdump4k8s/util"
 )
 
@@ -70,6 +71,8 @@ func uploadStorage(file string) string {
 		return alioss.Upload(file)
 	case "huaweiobs":
 		return huaweiobs.UploadToHwObs(file)
+	case "qiniu":
+		return qiniu.Upload(file)
 	default:
 		panic(fmt.Sprintf("不支持文件存储类型%s", type_))
 	}
