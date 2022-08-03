@@ -61,7 +61,12 @@ huaweiobs.ak=
 huaweiobs.sk=
 huaweiobs.bucketName=
 huaweiobs.folder=jvmdump
-
+#七牛云
+qiniu.apiHost=
+qiniu.accessKey=
+qiniu.secretKey=
+qiniu.bucket=
+qiniu.folder=jvmdump
 #通知消息是可选的 如果不设置就不推送消息
 #钉钉群机器人token
 notify.dingtalkToken=
