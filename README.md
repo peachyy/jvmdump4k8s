@@ -34,7 +34,7 @@ linux
 
 #### 使用示例
 ```
-wget https://github.com/peachyy/jvmdump4k8s/releases/download/v1.11.2/jvmdump4k8s-linux.zip
+wget https://github.com/peachyy/jvmdump4k8s/releases/download/v1.11.3/jvmdump4k8s-linux.zip
 unzip jvmdump4k8s-linux.zip 
 chmod +x jvmdump4k8s
 
