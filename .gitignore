@@ -17,3 +17,5 @@ jtester.properties
 .DS_Store
 *.tar.gz
 *.rpm
+*.exe
+jvmdump4k8s
